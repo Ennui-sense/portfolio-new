@@ -1,0 +1,11 @@
+@use "~/styles/helpers" as *;
+
+.cases {
+	padding-top: rem(208);
+	
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(40);
+	}
+}

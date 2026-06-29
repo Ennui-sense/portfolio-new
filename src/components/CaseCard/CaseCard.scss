@@ -1,0 +1,54 @@
+@use "~/styles/helpers" as *;
+
+.case-card {
+	&__inner {
+		background-color: var(--color-gray);
+		border-radius: var(--border-radius-large);
+		padding: rem(16) rem(16) 0 rem(16);
+		margin-bottom: rem(12);
+	}
+
+	&__address-bar {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		padding: rem(6) rem(10);
+		background-color: var(--color-light);
+		border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+	}
+
+	&__traffic-lights {
+		display: flex;
+		column-gap: rem(4);
+		align-items: center;
+		position: absolute;
+		top: 50%;
+		left: rem(10);
+		transform: translateY(-50%)
+	}
+
+	&__control {
+		@include square(rem(6));
+
+		border-radius: 50%;
+		background-color: var(--color-gray-light);
+	}
+
+	&__active-tab {
+		@include flex-center(true);
+
+		padding-inline: rem(100);
+		border-radius: var(--border-radius-x-small);
+		background-color: var(--color-gray-light);
+		font-size: rem(8);
+		height: rem(14);
+
+		@include hover  {
+			color: #0078D7;
+		}
+	}
+
+	&__description {
+		max-width: rem(400);
+	}
+}

@@ -1,0 +1,22 @@
+@use "~/styles/helpers" as *;
+
+.footer {
+	padding-block: rem(60) rem(32);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: rem(14);
+    line-height: 1.2;
+    color: var(--color-gray-dark);
+    text-decoration: underline;
+
+    @include hover {
+      color: var(--color-dark);
+    }
+  }
+}

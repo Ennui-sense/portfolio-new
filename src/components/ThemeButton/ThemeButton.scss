@@ -1,0 +1,14 @@
+@use "~/styles/helpers" as *;
+
+.theme-button {
+	@include button-reset;
+	@include square(rem(40));
+	@include flex-center(true);
+	
+	position: fixed;
+	top: rem(24);
+	right: rem(24);
+	border-radius: var(--border-radius);
+	border: var(--border-light);
+	z-index: 100;
+}

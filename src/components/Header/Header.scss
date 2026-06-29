@@ -2,6 +2,13 @@
 
 .header {
   padding-block: rem(40) rem(36);
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: var(--color-light);
+	width: 100%;
+	z-index: 100;
 
   &__inner {
     display: flex;
@@ -24,22 +31,6 @@
   &__description {
     margin-bottom: rem(8);
     max-width: rem(420);
-  }
-
-  &__socials {
-    display: flex;
-    column-gap: rem(24);
-
-    &-link {
-      font-size: rem(14);
-      line-height: 1.2;
-      color: var(--color-gray-dark);
-      text-decoration: underline;
-
-      @include hover {
-        color: var(--color-dark);
-      }
-    }
   }
 
   &__stack {
