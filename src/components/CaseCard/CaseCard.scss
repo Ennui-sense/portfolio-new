@@ -6,6 +6,11 @@
 		border-radius: var(--border-radius-large);
 		padding: rem(16) rem(16) 0 rem(16);
 		margin-bottom: rem(12);
+
+		@include mobile {
+			border-radius: var(--border-radius);
+			padding: rem(8) rem(8) 0 rem(8);
+		}
 	}
 
 	&__address-bar {
@@ -15,6 +20,10 @@
 		padding: rem(6) rem(10);
 		background-color: var(--color-light);
 		border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+
+		@include mobile {
+			padding: rem(2) rem(6);
+		}
 	}
 
 	&__traffic-lights {
@@ -24,7 +33,11 @@
 		position: absolute;
 		top: 50%;
 		left: rem(10);
-		transform: translateY(-50%)
+		transform: translateY(-50%);
+
+		@include mobile {
+			left: rem(6);
+		}
 	}
 
 	&__control {
@@ -32,6 +45,10 @@
 
 		border-radius: 50%;
 		background-color: var(--color-gray-light);
+
+		@include mobile {
+			@include square(rem(4))
+		}
 	}
 
 	&__active-tab {
@@ -43,8 +60,14 @@
 		font-size: rem(8);
 		height: rem(14);
 
-		@include hover  {
+		@include hover {
 			color: #0078D7;
+		}
+
+		@include mobile {
+			padding-inline: rem(36);
+			font-size: rem(6);
+			height: rem(11);
 		}
 	}
 

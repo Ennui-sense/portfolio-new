@@ -1,12 +1,23 @@
 @use "~/styles/helpers" as *;
 
 .footer {
-	padding-block: rem(60) rem(32);
+  padding-block: rem(60) rem(32);
+
+  @include mobile {
+    padding-block: rem(40) rem(24);
+  }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: start;
+      row-gap: rem(24);
+    }
   }
 
   &__link {

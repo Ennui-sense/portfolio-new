@@ -1,8 +1,12 @@
 @use "~/styles/helpers" as *;
 
 .cases {
-	padding-top: rem(208);
-	
+	// padding-top: rem(208);
+
+	// @include mobile {
+	// 	padding-top: rem(420);
+	// }
+
 	&__list {
 		display: flex;
 		flex-direction: column;

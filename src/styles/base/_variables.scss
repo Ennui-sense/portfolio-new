@@ -11,15 +11,15 @@
   --font-family: "Inter", sans-serif;
 
   --container-width: #{rem(768)};
-  --container-padding-x: #{rem(20)};
+  --container-padding-x: #{rem(24)};
 
   --border-radius-x-small: #{rem(3)};
   --border-radius-small: #{rem(8)};
   --border-radius: #{rem(12)};
   --border-radius-large: #{rem(16)};
 
-	--border-light: #{rem(1)} solid var(--color-gray-light);
-	// --border-dark: #{rem(1)} solid var(--color-gray-light);
+  --border-light: #{rem(1)} solid var(--color-gray-light);
+  // --border-dark: #{rem(1)} solid var(--color-gray-light);
 
   --button-height: #{rem(40)};
 
