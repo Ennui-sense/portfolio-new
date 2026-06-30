@@ -1,18 +1,29 @@
 @use "./../helpers" as *;
 
 :root {
-  --color-dark: #111;
   --color-light: #fdfdfc;
-  
-  --color-surface: #f0f0f0;
-  --color-surface-2: #fff;
-  --color-surface-3: #e5e5e4;
-  --color-gray: #6f6f6f;
-  
+  --color-dark: #111;
+
+  --color-bg-light: #fdfdfc;
+  --color-text-light: #111;
+  --color-surface-light: #f0f0f0;
+  --color-surface-2-light: #fff;
+  --color-surface-3-light: #e5e5e4;
+  --color-muted-light: #6f6f6f;
+
+  --color-bg-dark: #111;
+  --color-text-dark: #fdfdfc;
   --color-surface-dark: #1c1c1c;
   --color-surface-2-dark: #363636;
   --color-surface-3-dark: #545454;
-  --color-gray-dark: #9f9f9e;
+  --color-muted-dark: #9f9f9e;
+
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+  --color-surface: var(--color-surface-light);
+  --color-surface-2: var(--color-surface-2-light);
+  --color-surface-3: var(--color-surface-3-light);
+  --color-muted: var(--color-muted-light);
 
   --font-family: "Inter", sans-serif;
 
@@ -24,9 +35,18 @@
   --border-radius: #{rem(12)};
   --border-radius-large: #{rem(16)};
 
-  --border-light: #{rem(1)} solid var(--color-surface-3);
+  --border-default: #{rem(1)} solid var(--color-surface-3);
 
   --button-height: #{rem(40)};
 
   --transition-duration: 0.25s;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+  --color-surface: var(--color-surface-dark);
+  --color-surface-2: var(--color-surface-2-dark);
+  --color-surface-3: var(--color-surface-3-dark);
+  --color-muted: var(--color-muted-dark);
 }

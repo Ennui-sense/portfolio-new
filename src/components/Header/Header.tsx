@@ -46,6 +46,7 @@ const Header = () => {
               enableDamping
               enablePan={false}
               enableZoom={false}
+              maxPolarAngle={Math.PI / 2.3}
               rotateSpeed={0.7}
             />
           </Canvas>

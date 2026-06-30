@@ -9,8 +9,12 @@
 	top: rem(24);
 	right: rem(24);
 	border-radius: var(--border-radius);
-	border: var(--border-light);
+	border: var(--border-default);
 	z-index: 100;
-	background-color: var(--color-light);
-	color: var(--color-dark);
+	background-color: var(--color-bg);
+	color: var(--color-text);
+
+	svg * {
+		fill: currentColor;
+	}
 }

@@ -23,11 +23,11 @@
   &__link {
     font-size: rem(14);
     line-height: 1.2;
-    color: var(--color-gray);
+    color: var(--color-muted);
     text-decoration: underline;
 
     @include hover {
-      color: var(--color-dark);
+      color: var(--color-text);
     }
   }
 }
