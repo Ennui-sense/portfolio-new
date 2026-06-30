@@ -20,6 +20,25 @@
     margin-left: auto;
   }
 
+  &__image {
+    flex: 0 0 rem(120);
+    width: rem(120);
+    height: rem(120);
+    overflow: hidden;
+    cursor: grab;
+    touch-action: none;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    canvas {
+      display: block;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
   &__name {
     font-weight: 500;
     font-size: rem(14);
