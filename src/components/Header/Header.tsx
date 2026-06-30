@@ -43,6 +43,8 @@ const Header = () => {
             </Suspense>
 
             <OrbitControls
+              autoRotate
+              autoRotateSpeed={1.8}
               enableDamping
               enablePan={false}
               enableZoom={false}
