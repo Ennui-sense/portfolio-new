@@ -26,8 +26,8 @@ const CaseCard = ({ caseData, className }: ICaseCard) => {
           </a>
         </header>
 
-        <video loop muted autoPlay className="case-card__video">
-          <source src={videoSrc} />
+        <video loop muted autoPlay className="case-card__video" disablePictureInPicture playsInline webkit-playsInline>
+          <source src={videoSrc} type="video.mp4"/>
           Извините, ваш браузер не поддерживает тег video
         </video>
       </div>
