@@ -2,7 +2,7 @@
 
 .case-card {
 	&__inner {
-		background-color: var(--color-gray);
+		background-color: var(--color-surface);
 		border-radius: var(--border-radius-large);
 		padding: rem(16) rem(16) 0 rem(16);
 		margin-bottom: rem(12);
@@ -18,7 +18,7 @@
 		display: flex;
 		justify-content: center;
 		padding: rem(6) rem(10);
-		background-color: var(--color-light);
+		background-color: var(--color-surface-2);
 		border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
 
 		@include mobile {
@@ -44,7 +44,7 @@
 		@include square(rem(6));
 
 		border-radius: 50%;
-		background-color: var(--color-gray-light);
+		background-color: var(--color-surface-3);
 
 		@include mobile {
 			@include square(rem(4))
@@ -56,7 +56,7 @@
 
 		padding-inline: rem(100);
 		border-radius: var(--border-radius-x-small);
-		background-color: var(--color-gray-light);
+		background-color: var(--color-surface-3);
 		font-size: rem(8);
 		height: rem(14);
 

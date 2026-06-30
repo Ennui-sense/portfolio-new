@@ -2,13 +2,6 @@
 
 .header {
   padding-block: rem(40) rem(36);
-  // position: fixed;
-  // top: 0;
-  // left: 50%;
-  // transform: translateX(-50%);
-  // background-color: var(--color-light);
-  // z-index: 100;
-  // width: 100%;
 
   &__inner {
     display: flex;
@@ -50,7 +43,7 @@
     font-weight: 500;
     font-size: rem(14);
     line-height: 1;
-    color: var(--color-gray-dark);
+    color: var(--color-gray);
     margin-bottom: rem(8);
   }
 
@@ -68,7 +61,7 @@
       font-weight: 500;
       font-size: rem(14);
       line-height: 1;
-      color: var(--color-gray-dark);
+      color: var(--color-gray);
       margin-bottom: rem(8);
     }
 

@@ -2,11 +2,17 @@
 
 :root {
   --color-dark: #111;
-  --color-light: #fff;
-  --color-light-alt: #fdfdfc;
-  --color-gray: #f0f0f0;
-  --color-gray-dark: #6f6f6f;
-  --color-gray-light: #e5e5e4;
+  --color-light: #fdfdfc;
+  
+  --color-surface: #f0f0f0;
+  --color-surface-2: #fff;
+  --color-surface-3: #e5e5e4;
+  --color-gray: #6f6f6f;
+  
+  --color-surface-dark: #1c1c1c;
+  --color-surface-2-dark: #363636;
+  --color-surface-3-dark: #545454;
+  --color-gray-dark: #9f9f9e;
 
   --font-family: "Inter", sans-serif;
 
@@ -18,8 +24,7 @@
   --border-radius: #{rem(12)};
   --border-radius-large: #{rem(16)};
 
-  --border-light: #{rem(1)} solid var(--color-gray-light);
-  // --border-dark: #{rem(1)} solid var(--color-gray-light);
+  --border-light: #{rem(1)} solid var(--color-surface-3);
 
   --button-height: #{rem(40)};
 
