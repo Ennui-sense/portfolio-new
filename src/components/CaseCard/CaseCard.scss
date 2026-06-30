@@ -72,25 +72,11 @@
   }
 
   &__video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     background-color: transparent;
-    &::-webkit-media-controls-panel {
-      display: none !important;
-      -webkit-appearance: none;
-      opacity: 0;
-      visibility: hidden;
-    }
-    &::-webkit-media-controls-play-button {
-      display: none !important;
-      -webkit-appearance: none;
-      opacity: 0;
-      visibility: hidden;
-    }
-    &::-webkit-media-controls-start-playback-button {
-      display: none !important;
-      -webkit-appearance: none;
-      opacity: 0;
-      visibility: hidden;
-    }
+    object-fit: cover;
   }
 
   &__description {
