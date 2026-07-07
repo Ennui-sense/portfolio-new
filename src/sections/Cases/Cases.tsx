@@ -8,12 +8,8 @@ const Cases = () => {
       <div className="cases__inner container">
         <ul className="cases__list">
           {casesData.map((caseData) => (
-            <li className="cases__item">
-              <CaseCard
-                caseData={caseData}
-                key={caseData.id}
-                className="case__card"
-              />
+            <li className="cases__item" key={caseData.id}>
+              <CaseCard caseData={caseData} className="cases__card" />
             </li>
           ))}
         </ul>

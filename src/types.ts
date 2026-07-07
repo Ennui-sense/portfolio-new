@@ -11,8 +11,10 @@ export type StackType = {
 
 export type CaseType = {
   id: number;
-  videoSrc: string;
+  mp4VideoSrc: string;
+  webmVideoSrc: string;
 	href: string;
 	label: string;
-	descriprion: string;
+	description: string;
+	posterSrc: string;
 }
