@@ -40,7 +40,7 @@ const HeaderModel = ({ onLoaded }: HeaderModelProps) => {
       </Suspense>
 
       <OrbitControls
-        // autoRotate
+        autoRotate
         autoRotateSpeed={1.8}
         enableDamping
         enablePan={false}
