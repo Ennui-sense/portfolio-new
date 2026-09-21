@@ -5,7 +5,7 @@
 	@include square(var(--button-height));
 	@include flex-center(true);
 	
-	position: absolute;
+	position: fixed;
 	top: rem(24);
 	right: rem(24);
 	border-radius: var(--border-radius);
